@@ -7,35 +7,182 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      font-weight: bold;
+      font-size: 1em;
+      margin-right: 10px;
+    }
+
+    .site-title {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.1);
       text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      margin-top: auto;
     }
+
     .container {
-      max-width: 600px;
-      padding: 20px;
+      text-align: center;
+      padding: 60px 20px;
+      flex: 1;
     }
+
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
       letter-spacing: 2px;
     }
+
     p {
       font-size: 1.2em;
       opacity: 0.8;
+      margin-bottom: 30px;
     }
+
+    .countdown {
+      font-size: 2em;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .time-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .time-box span {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .label {
+      font-size: 0.8em;
+      opacity: 0.7;
+    }
+    .logo {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
   </style>
 </head>
 <body>
+
+  <header>
+    <div class="logo-box">
+      <div class="logo">
+        <img src="asset/logo.png" alt="Pet Friendly Sapce" width="500" height="600">
+      </div>  
+      <div class="site-title">Pet Friendly Sapce</div>
+    </div>
+  </header>
+
   <div class="container">
     <h1>Coming Soon</h1>
-    <p>We're working hard to bring something awesome. Stay tuned!</p>
+    <p>We're working hard to launch our website. Stay tuned!</p>
+
+    <div class="countdown" id="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <div class="label">Days</div>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <div class="label">Hours</div>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <div class="label">Minutes</div>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <div class="label">Seconds</div>
+      </div>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Petfriendlysapce. All rights reserved.
+  </footer>
+
+  <script>
+    const launchDate = new Date(Date.now() + 10 * 24 * 60 * 60 * 1000).getTime();
+
+const updateCountdown = () => {
+  const now = new Date().getTime();
+  const distance = launchDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("days").textContent = days.toString().padStart(2, '0');
+  document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+  document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+  document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+    document.getElementById("countdown").innerHTML = "We are live!";
+  }
+};
+
+const countdownInterval = setInterval(updateCountdown, 1000);
+updateCountdown();
+  </script>
+
 </body>
 </html>
