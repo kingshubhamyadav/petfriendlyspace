@@ -1,193 +1,346 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetStay - Pet-Friendly Hotels</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-    }
-    .hero {
-      background-color: #eef2ff;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #1e1e1e;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      margin: 1rem 0;
-      color: #555;
-    }
-    .hero .btn {
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-    }
-    .section-title {
-      color: #4f46e5;
-      font-size: 2.25rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-    .card img {
-      height: 200px;
-      object-fit: cover;
-    }
-    .cta {
-      background-color: #4f46e5;
-      color: white;
-      padding: 4rem 1rem;
-      text-align: center;
-    }
-    .cta .btn {
-      background-color: white;
-      color: #4f46e5;
-      font-weight: 600;
-    }
-    footer {
-      padding: 2rem 1rem;
-      text-align: center;
-      color: #888;
-      background-color: #fff;
-      border-top: 1px solid #ddd;
-    }
-  </style>
-</head>
-<body>
-  <header class="bg-white shadow-sm py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h4 text-primary">Pet Friendly Space</h1>
-      <nav>
-        <a href="#" class="text-decoration-none mx-2 text-dark">Home</a>
-        <a href="#" class="text-decoration-none mx-2 text-dark">Hotels</a>
-        <a href="#" class="text-decoration-none mx-2 text-dark">Contact</a>
-      </nav>
-    </div>
-  </header>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sooner | SoonLaunch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <section class="hero">
-    <div class="container">
-      <h1>Travel with Your Best Friend</h1>
-      <p>Find the best pet-friendly hotels for your next trip — no compromises, just good vibes.</p>
-      <a href="#" class="btn btn-primary">Find a Hotel</a>
-    </div>
-  </section>
+        <meta name="author" content="SoonLaunch">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-  <section class="py-5">
-    <div class="container text-center">
-      <h2 class="section-title">Why Choose PetStay?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://img.icons8.com/ios-filled/100/dog.png" class="card-img-top p-4" alt="Dog Icon">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Pet-Friendly Guarantee</h5>
-              <p class="card-text">Every listing ensures your pet is welcome and cared for.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://img.icons8.com/ios-filled/100/dog-house.png" class="card-img-top p-4" alt="Dog House">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Verified Stays</h5>
-              <p class="card-text">Reviewed and verified by thousands of happy pet owners.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://img.icons8.com/ios-filled/100/travel.png" class="card-img-top p-4" alt="Travel Icon">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Easy Booking</h5>
-              <p class="card-text">Book your next adventure in just a few clicks.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+		<!-- ========================= CSS here ========================= -->
+		<link rel="stylesheet" href="assets/css/bootstrap-4.5.0.min.css">
+        <link rel="stylesheet" href="assets/css/lineicons.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="section-title">Top Vacation Destinations</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://source.unsplash.com/400x250/?paris,city" class="card-img-top" alt="Paris">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Paris, France</h5>
-              <p class="card-text">Charming walks, cozy cafés, and romance for you and your pet.</p>
+        <!-- ========================= main start ========================= -->
+        <main class="main-06">
+            <!-- header start  -->
+            <div class="header header-06">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <a href="#" class="logo"> <img src="assets/img/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="header-right text-right">
+                                <a href="#">Say hello! info@yourwebsite.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://source.unsplash.com/400x250/?newyork,city" class="card-img-top" alt="New York">
-            <div class="card-body">
-              <h5 class="card-title text-primary">New York City, USA</h5>
-              <p class="card-text">Urban parks and pet bakeries in the city that never sleeps.</p>
+            <!-- header end  -->
+            <!-- ========================= main-wrapper start ========================= -->
+            <div class="main-wrapper demo-06">
+                <!-- hero-area start  -->
+                <div class="hero-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <!-- heading start  -->
+                                <div class="heading">
+                                    <h1 class="text-white wow fadeInUp" data-wow-delay=".2s">We Are <br> Coming Soon</h1>
+                                </div>
+                                <!-- heading end  -->
+                            </div>
+                            <div class="col-xl-7 col-lg-7">
+                                <!-- countdown start  -->
+                                <div class="wow fadeInRight" data-wow-delay=".4s" data-countdown="2021/10/01"></div>
+                                <!-- countdown end  -->
+                            </div>
+                            <div class="col-xl-5 col-lg-5">
+                                <!-- desc strat  -->
+                                <p class="wow fadeInLeft" data-wow-delay=".4s">We're strong believers that the best solutions come from gathering new insights and pushing conventional boundaries.</p>
+                                <!-- desc end  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero-area end  -->
+                <!-- team-area start  -->
+                <div class="team-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <!-- section-title start  -->
+                                <div class="section-title">
+                                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Our Real Hero</h1>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Every month, amounts of Projects <br class="d-none d-lg-block"> handover by this genius team.</h2>
+                                </div>
+                                <!-- section-title end  -->
+                            </div>
+                        </div>
+                        <!-- team-wrapper start  -->
+                        <div class="team-wrapper">
+                            <!-- team-item start  -->
+                            <div class="team-item wow fadeInUp" data-wow-delay=".2s">
+                                <div class="team-img">
+                                    <img src="assets/img/img-1.jpg" alt="">
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-info">
+                                    <h4>John Doe</h4>
+                                    <p>Sr. Software Engineer</p>
+                                </div>
+                            </div>
+                            <!-- team-item end  -->
+                            <!-- team-item start  -->
+                            <div class="team-item wow fadeInUp" data-wow-delay=".4s">
+                                <div class="team-img">
+                                    <img src="assets/img/img-2.jpg" alt="">
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-info">
+                                    <h4>Sarah Junyna</h4>
+                                    <p>Business Manager</p>
+                                </div>
+                            </div>
+                            <!-- team-item end  -->
+                            <!-- team-item start  -->
+                            <div class="team-item wow fadeInUp" data-wow-delay=".6s">
+                                <div class="team-img">
+                                    <img src="assets/img/img-3.jpg" alt="">
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-info">
+                                    <h4>Rob Hope</h4>
+                                    <p>UX/UI Designer</p>
+                                </div>
+                            </div>
+                            <!-- team-item end  -->
+                        </div>
+                        <!-- team-wrapper end  -->
+                    </div>
+                </div> <!-- end container  -->
+                <!-- team-area end  -->
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://source.unsplash.com/400x250/?tokyo,city" class="card-img-top" alt="Tokyo">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Tokyo, Japan</h5>
-              <p class="card-text">Clean parks, pet cafés, and futuristic charm.</p>
+            <!-- ========================= main-wrapper end ========================= -->
+            <!-- footer start  -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="copyright wow fadeInLeft" data-wow-delay=".2s">
+                                <p>Part of <a href="htts://uideck.com" rel="nofollow">UIdeck</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="credit wow fadeInRight" data-wow-delay=".4s">
+                                <p>Designed and Developed by <a rel="nofollow" href="https://soonlaunch.com">SoonLaunch</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://source.unsplash.com/400x250/?barcelona,city" class="card-img-top" alt="Barcelona">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Barcelona, Spain</h5>
-              <p class="card-text">Sunny beaches, tapas spots, and pet paradise.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://source.unsplash.com/400x250/?vancouver,nature" class="card-img-top" alt="Vancouver">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Vancouver, Canada</h5>
-              <p class="card-text">Nature trails, fresh air, and mountains for miles.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://source.unsplash.com/400x250/?sydney,beach" class="card-img-top" alt="Sydney">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Sydney, Australia</h5>
-              <p class="card-text">Dog beaches, coastal walks, and laid-back vibes.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <!-- footer end  -->
+        </main>
+        <!-- ========================= main end ========================= -->
+        
+		<!-- ========================= JS here ========================= -->
+		<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap-4.5.0.min.js"></script>
+        <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/main.js"></script>
+    </body>
+</html>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sooner | SoonLaunch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <section class="cta">
-    <div class="container">
-      <h2>Ready to Explore?</h2>
-      <p>Join thousands of happy pet travelers and find your perfect stay.</p>
-      <a href="#" class="btn">Start Browsing Hotels</a>
-    </div>
-  </section>
+        <meta name="author" content="SoonLaunch">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-  <footer>
-    &copy; 2025 PetFriendlySpace. All rights reserved.
-  </footer>
+		<!-- ========================= CSS here ========================= -->
+		<link rel="stylesheet" href="assets/css/bootstrap-4.5.0.min.css">
+        <link rel="stylesheet" href="assets/css/lineicons.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- ========================= main start ========================= -->
+        <main class="main-06">
+            <!-- header start  -->
+            <div class="header header-06">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <a href="#" class="logo"> <img src="assets/img/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="header-right text-right">
+                                <a href="#">Say hello! info@yourwebsite.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header end  -->
+            <!-- ========================= main-wrapper start ========================= -->
+            <div class="main-wrapper demo-06">
+                <!-- hero-area start  -->
+                <div class="hero-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <!-- heading start  -->
+                                <div class="heading">
+                                    <h1 class="text-white wow fadeInUp" data-wow-delay=".2s">We Are <br> Coming Soon</h1>
+                                </div>
+                                <!-- heading end  -->
+                            </div>
+                            <div class="col-xl-7 col-lg-7">
+                                <!-- countdown start  -->
+                                <div class="wow fadeInRight" data-wow-delay=".4s" data-countdown="2021/10/01"></div>
+                                <!-- countdown end  -->
+                            </div>
+                            <div class="col-xl-5 col-lg-5">
+                                <!-- desc strat  -->
+                                <p class="wow fadeInLeft" data-wow-delay=".4s">We're strong believers that the best solutions come from gathering new insights and pushing conventional boundaries.</p>
+                                <!-- desc end  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero-area end  -->
+                <!-- team-area start  -->
+                <div class="team-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <!-- section-title start  -->
+                                <div class="section-title">
+                                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Our Real Hero</h1>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Every month, amounts of Projects <br class="d-none d-lg-block"> handover by this genius team.</h2>
+                                </div>
+                                <!-- section-title end  -->
+                            </div>
+                        </div>
+                        <!-- team-wrapper start  -->
+                        <div class="team-wrapper">
+                            <!-- team-item start  -->
+                            <div class="team-item wow fadeInUp" data-wow-delay=".2s">
+                                <div class="team-img">
+                                    <img src="assets/img/img-1.jpg" alt="">
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-info">
+                                    <h4>John Doe</h4>
+                                    <p>Sr. Software Engineer</p>
+                                </div>
+                            </div>
+                            <!-- team-item end  -->
+                            <!-- team-item start  -->
+                            <div class="team-item wow fadeInUp" data-wow-delay=".4s">
+                                <div class="team-img">
+                                    <img src="assets/img/img-2.jpg" alt="">
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-info">
+                                    <h4>Sarah Junyna</h4>
+                                    <p>Business Manager</p>
+                                </div>
+                            </div>
+                            <!-- team-item end  -->
+                            <!-- team-item start  -->
+                            <div class="team-item wow fadeInUp" data-wow-delay=".6s">
+                                <div class="team-img">
+                                    <img src="assets/img/img-3.jpg" alt="">
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                                        <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-info">
+                                    <h4>Rob Hope</h4>
+                                    <p>UX/UI Designer</p>
+                                </div>
+                            </div>
+                            <!-- team-item end  -->
+                        </div>
+                        <!-- team-wrapper end  -->
+                    </div>
+                </div> <!-- end container  -->
+                <!-- team-area end  -->
+            </div>
+            <!-- ========================= main-wrapper end ========================= -->
+            <!-- footer start  -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="copyright wow fadeInLeft" data-wow-delay=".2s">
+                                <p>Part of <a href="htts://uideck.com" rel="nofollow">UIdeck</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="credit wow fadeInRight" data-wow-delay=".4s">
+                                <p>Designed and Developed by <a rel="nofollow" href="https://soonlaunch.com">SoonLaunch</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer end  -->
+        </main>
+        <!-- ========================= main end ========================= -->
+        
+		<!-- ========================= JS here ========================= -->
+		<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap-4.5.0.min.js"></script>
+        <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/main.js"></script>
+    </body>
 </html>
